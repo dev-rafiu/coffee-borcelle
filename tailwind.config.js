@@ -2,7 +2,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
     colors: {
       foreground: "#fff",
       "landing-page": "#2F1F14",
@@ -11,6 +10,11 @@ export default {
       reviews: "#655546",
       discover: "#DBBCA1",
       "discover-foreground": "#DBBCA1",
+    },
+    extend: {},
+    container: {
+      center: true,
+      padding: "2rem",
     },
   },
   plugins: [],

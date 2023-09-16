@@ -1,13 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/8d7b7c02c4.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <footer class="bg-footer text-foreground py-10">
+      <div class="container grid gap-8 lg:grid-cols-3 max-w-5xl mx-auto">
+        <div class="space-y-1 border border-foreground">
+          <p class="text-2xl font-bold">Contact Us</p>
+          <p>Send us a message</p>
+
+          <form class="space-y-3 border border-discover">
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Full name"
+                class="w-full rounded py-1 px-2"
+              />
+            </div>
+
+            <div class="form-control">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="w-full rounded py-1 px-2"
+              />
+            </div>
+
+            <div class="form-control">
+              <textarea
+                name=""
+                id=""
+                cols="5"
+                rows="5"
+                placeholder="Your message"
+                class="w-full rounded py-1 px-2"
+              ></textarea>
+            </div>
+
+            <button
+              class="capitalize py-2 px-10 text-footer rounded bg-discover"
+            >
+              submit
+            </button>
+          </form>
+        </div>
+
+        <div class="space-y-1 border border-foreground">
+          <p class="text-2xl font-bold">Sitemap</p>
+          <p>All our pages</p>
+          <nav>
+            <ul class="flext gap-8 items-center">
+              <li><a href="#" class="capitalize">home</a></li>
+              <li><a href="#" class="capitalize">about us</a></li>
+              <li><a href="#" class="capitalize">feature</a></li>
+              <li><a href="#" class="capitalize">pricing</a></li>
+              <li><a href="#" class="capitalize">contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="space-y-1 border border-foreground">
+          <div class="">
+            <a href="/" class="">
+              <img
+                src="/public/images/logo.png"
+                class="border border-foreground h-48"
+              />
+            </a>
+          </div>
+
+          <ul class="flex flex-col gap-1">
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-phone-flip"></i>
+              <span>(08) 400 2000</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-regular fa-envelope"></i>
+              <span>coffeeborcelle@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
