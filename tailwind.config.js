@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
-    color: {
+    colors: {
       foreground: "#fff",
       "landing-page": "#2F1F14",
       nav: "#6F4436",
