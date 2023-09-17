@@ -14,18 +14,20 @@
     <title>Vite App</title>
   </head>
   <body>
-    <footer class="bg-footer text-foreground py-10">
-      <div class="container grid gap-8 lg:grid-cols-3 max-w-5xl mx-auto">
-        <div class="space-y-1 border border-foreground">
-          <p class="text-2xl font-bold">Contact Us</p>
-          <p>Send us a message</p>
+    <footer class="footer bg-footer text-foreground py-10">
+      <div class="container p-0 grid gap-8 lg:grid-cols-[auto,_auto,_auto]">
+        <div class="space-y-5">
+          <header class="">
+            <p class="text-2xl font-bold">Contact Us</p>
+            <p>Send us a message</p>
+          </header>
 
-          <form class="space-y-3 border border-discover">
+          <form class="space-y-3 mt-4">
             <div class="form-control">
               <input
                 type="text"
                 placeholder="Full name"
-                class="w-full rounded py-1 px-2"
+                class="w-full lg:w-[80%] rounded py-1 px-2"
               />
             </div>
 
@@ -33,7 +35,7 @@
               <input
                 type="email"
                 placeholder="Your email"
-                class="w-full rounded py-1 px-2"
+                class="w-full lg:w-[80%] rounded py-1 px-2"
               />
             </div>
 
@@ -44,23 +46,26 @@
                 cols="5"
                 rows="5"
                 placeholder="Your message"
-                class="w-full rounded py-1 px-2"
+                class="w-full lg:w-[80%] rounded py-1 px-2"
               ></textarea>
             </div>
 
             <button
-              class="capitalize py-2 px-10 text-footer rounded bg-discover"
+              class="capitalize py-2 px-10 text-footer rounded-md bg-discover"
             >
               submit
             </button>
           </form>
         </div>
 
-        <div class="space-y-1 border border-foreground">
-          <p class="text-2xl font-bold">Sitemap</p>
-          <p>All our pages</p>
-          <nav>
-            <ul class="flext gap-8 items-center">
+        <div class="space-y-5">
+          <header class="space-y-1">
+            <p class="text-2xl font-bold">Sitemap</p>
+            <p>All our pages</p>
+          </header>
+
+          <nav class="">
+            <ul class="flex flex-col gap-2">
               <li><a href="#" class="capitalize">home</a></li>
               <li><a href="#" class="capitalize">about us</a></li>
               <li><a href="#" class="capitalize">feature</a></li>
@@ -70,15 +75,12 @@
           </nav>
         </div>
 
-        <div class="space-y-1 border border-foreground">
-          <div class="">
-            <a href="/" class="">
-              <img
-                src="/public/images/logo.png"
-                class="border border-foreground h-48"
-              />
-            </a>
-          </div>
+        <div class="space-y-1 lg:text-center">
+          <header class="">
+            <!-- <a href="/" class="w-max h-max"> -->
+            <img src="/public/images/logo.png" class="w-40" />
+            <!-- </a> -->
+          </header>
 
           <ul class="flex flex-col gap-1">
             <li class="flex items-center gap-3">
