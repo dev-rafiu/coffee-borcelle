@@ -8,6 +8,7 @@ export default {
       nav: "#6F4436",
       footer: " #291600",
       reviews: "#655546",
+      "review-author": "#0A424F",
       discover: "#DBBCA1",
       "discover-foreground": "#DBBCA1",
     },

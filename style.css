@@ -24,6 +24,14 @@ h2 {
   font-family: "Poppins", sans-serif;
 }
 
+.reviews {
+  font-family: "Montserrat", sans-serif;
+}
+
+.reviews li {
+  font-family: "Poppins", sans-serif;
+}
+
 .footer,
 .discover p {
   font-family: "Inter", sans-serif;
