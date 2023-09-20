@@ -67,6 +67,8 @@ h2 {
   }
 
   .primary-navigation {
+    color: #6f4436;
+
     position: fixed;
     inset: 0 30% 0 0;
 
@@ -82,10 +84,6 @@ h2 {
     transition: transform 0.5s ease-out;
   }
 
-  .primary-navigation {
-    align-items: flex-start;
-    color: #6f4436;
-  }
   .primary-navigation li {
     padding-top: 0;
     padding-bottom: 0;
