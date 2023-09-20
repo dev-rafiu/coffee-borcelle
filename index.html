@@ -9,9 +9,54 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
     <title>Coffee Borcelle</title>
   </head>
   <body>
+    <header class="primary-header bg-landing-page text-foreground">
+      <div class="container">
+        <div class="header__container-top flex items-center py-5">
+          <div class="logo-wrapper flex items-center justify-center">
+            <a href="/">
+              <img src="/images/logo.png" class="w-28 object-cover" />
+            </a>
+          </div>
+
+          <!-- nav links -->
+          <nav class="bg-nav rounded">
+            <ul
+              id="primary-navigation"
+              data-visible="false"
+              class="primary-navigation flex items-center"
+            >
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contract</a></li>
+            </ul>
+          </nav>
+
+          <!-- menu button -->
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="header__container-bottom">
+          <h1>Coffee Makes Mood</h1>
+          <p>"Indulge in Every Sip: Experience the Richness of Coffee!"</p>
+        </div>
+      </div>
+    </header>
+
     <section class="discover bg-discover py-16">
       <div
         class="container flex items-center flex-col gap-10 lg:flex-row lg:justify-between"

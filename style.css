@@ -20,9 +20,128 @@ h2 {
   font-size: 1.5rem;
 }
 
+/* landing page */
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.primary-navigation {
+  list-style: none;
+  gap: 1rem;
+  color: white;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.4s ease-out;
+  /* padding: 0 1rem; */
+}
+
+.primary-navigation li {
+  padding: 0.3rem 1rem;
+}
+
+.primary-navigation li.active {
+  background-color: #fff;
+  color: #6f4436;
+  border-radius: 4px;
+}
+
+@media (hover: hover) {
+  .primary-navigation a :hover {
+    color: #ff7d05;
+  }
+}
+
+@media (max-width: 35em) {
+  .header__container-top {
+    justify-content: space-between;
+  }
+
+  .primary-navigation {
+    position: fixed;
+    inset: 0 30% 0 0;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+
+    padding: min(30vh, 10rem) 1em;
+    background: white;
+    box-shadow: 0px 5px 15px (0, 0, 0, 0.3);
+
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+  }
+
+  .primary-navigation {
+    align-items: flex-start;
+    color: #6f4436;
+  }
+  .primary-navigation li {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .primary-navigation li.active {
+    color: #dbbca1;
+  }
+
+  .primary-navigation a {
+    font-size: 0.9rem;
+  }
+
+  @media (hover: hover) {
+    .primary-navigation a:hover {
+      color: #dbbca1;
+    }
+  }
+
+  .mobile-nav-toggle {
+    display: inline-block;
+    /* position: absolute; */
+    /* top: 1.3rem; */
+    /* right: 2rem; */
+    z-index: 9999;
+    color: #dbbca1;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0);
+  }
+}
+
+.header__container-bottom {
+  padding: 1rem 0 4rem 0;
+  text-align: center;
+}
+
+.header__container-bottom h1 {
+  font-family: "Pompiere", cursive;
+  font-size: 2.5rem;
+}
+
+.header__container-bottom {
+  font-family: "Galada", cursive;
+}
+
+/* discover section */
+
 .discover {
   font-family: "Poppins", sans-serif;
 }
+
+/* reviews section */
 
 .reviews {
   font-family: "Montserrat", sans-serif;
@@ -32,7 +151,10 @@ h2 {
   font-family: "Poppins", sans-serif;
 }
 
+/* footer */
+
 .footer,
-.discover p {
+.discover p,
+.primary-navigation a {
   font-family: "Inter", sans-serif;
 }
