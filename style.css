@@ -97,6 +97,7 @@ h2 {
 
   .primary-navigation a {
     font-size: 0.9rem;
+    font-weight: bold;
   }
 
   @media (hover: hover) {
