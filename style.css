@@ -25,7 +25,7 @@ h2 {
 .primary-header {
   background-image: url(./images/landing-page-img.png);
   background-position: right;
-  background-size: 800px;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
