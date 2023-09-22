@@ -23,7 +23,7 @@ h2 {
 /* landing page */
 
 .primary-header {
-  background-image: url(./public/images/landing-page-img.png);
+  background-image: url(./images/landing-page-img.png);
   background-position: right;
   background-size: 800px;
   background-repeat: no-repeat;
@@ -41,6 +41,8 @@ h2 {
 
 .primary-navigation {
   list-style: none;
+  display: flex;
+  align-items: center;
   gap: 1rem;
   color: white;
 }
@@ -68,13 +70,14 @@ h2 {
   }
 }
 
-@media (max-width: 35em) {
+@media (max-width: 768px) {
   .primary-header {
     background-image: none;
   }
 
   .header__container-top {
     justify-content: space-between;
+    width: 100%;
   }
 
   .primary-navigation {
@@ -132,7 +135,7 @@ h2 {
 }
 
 .header__container-bottom {
-  padding: 1rem 0 8rem 0;
+  padding: 3rem 0 8rem 0;
   text-align: center;
 }
 
