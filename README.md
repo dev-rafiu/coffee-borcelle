@@ -1,1 +1,1 @@
-![landingpage design](public/images/landing-page-img.png)
+![landingpage design](public/images/landingpage-design.png)
